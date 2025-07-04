@@ -35,14 +35,11 @@ c <filename>
 java <filename>
 :   Compile a Java file with javac
 
-js <filename>
-:   Run a JavaScript file with node
-
 move <source> <destination>
 :   Move or rename a file/directory
 
 packages all
-:   Install common packages (nodejs, JDK, build-essential)
+:   Install common packages (nodejs, JDK, build-essential, etc.)
 
 packages <package>
 :   Install a specific package
@@ -61,6 +58,9 @@ list more
 
 end
 :   Exit the shell
+    
+help
+:  Show list of commands
 
 
 

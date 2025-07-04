@@ -29,6 +29,38 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
 }
 
 int main() {
+    std::string help = R":(make file <filename>           Create a file
+make directory <dirname>       Create a directory
+
+delete file <filename>         Move file to trash
+delete directory <dirname>     Move directory to trash
+
+edit --nano <filename>         Edit file with nano
+edit --vi <filename>           Edit file with vi
+
+execute <filename>             Run a file:
+                               - *.js   → runs with node
+                               - *.class → runs with java
+                               - others → runs as executable
+
+c++ <filename>                 Compile a C++ file with g++
+c <filename>                   Compile a C file with gcc
+java <filename>                Compile a Java file with javac
+js <filename>                   Run a JavaScript file with node
+
+move <source> <destination>    Move or rename a file/directory
+
+packages all                   Install common packages (nodejs, JDK, build-essential)
+packages <package>             Install a specific package
+
+bash <command...>              Execute a raw bash command
+
+chdir <path>                   Change working directory (supports ~ for home)
+
+list                           List files in current directory
+list more                      List files with detailed view
+
+end                            Exit the shell):";
     std::string cmd;
     int torun;
     int tohist;
@@ -174,6 +206,8 @@ int main() {
             } else {
                 std::cout << "cshift error: invalid list-option";
             }
+        } else if (parsed[0] == "help") {
+            std::cout << help;
         } else {
             std::cout << "cshift error: invalid command: " << parsed[0] << "\n";
         }

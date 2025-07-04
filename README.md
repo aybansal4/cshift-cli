@@ -64,5 +64,6 @@ help
 
 
 
-**Notice**:  
-*CShift only supports linux distros because of dependencies on linux-only headers such as <unistd.h>*
+**Notices**:  
+- CShift only supports linux distros because of dependencies on linux-only headers such as *<unistd.h>*
+- To install CShift, you can download cshift.tar.gz and move the unzippped folder to the home directory (~) and to run it you can run "./cshift/cshift-executable" after having changes execute permissions

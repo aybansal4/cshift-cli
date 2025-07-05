@@ -2,3 +2,9 @@ Where is the history?
 Well, there is no history currently. when you download CShift you will get an empty file with the same name as this one.
 In that file will be your CShift history that gets updated when you run commands.
 If this were a command history, 4 "command not found" errors would have triggered
+Example commands:
+chdir ~/folder/for/code
+execute project.py
+edit --nano project.py
+bash chmod +x project.py
+execute project.py

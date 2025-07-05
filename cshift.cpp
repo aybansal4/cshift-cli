@@ -16,7 +16,7 @@
  * - Exit the shell with "end".
  * The shell parses user input, validates arguments, and invokes system commands accordingly.
  
- @author Ayan Bansal
+ Programmed by Ayan Bansal
  */
 
 

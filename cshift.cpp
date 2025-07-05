@@ -1,3 +1,25 @@
+/*
+ * cshift.cpp - Custom CLI Shell
+ *
+ * This program implements a simple custom command-line shell with the following functionalities:
+ * - Create/delete files and directories using "make" and "delete" commands.
+ * - Edit files using "nano" or "vi".
+ * - Execute scripts or binaries (js, class, or executable files).
+ * - Compile C, C++, and Java files.
+ * - Move or rename files and directories.
+ * - Install packages (either common or specific ones).
+ * - Execute raw bash commands.
+ * - Change the working directory, including support for "~" as home.
+ * - List files in the current directory, with optional detailed view.
+ * - Display help for available commands.
+ * - Maintain command history in a .cshift_hist file.
+ * - Exit the shell with "end".
+ * The shell parses user input, validates arguments, and invokes system commands accordingly.
+ 
+ @author Ayan Bansal
+ */
+
+
 #include <iostream>
 #include <sstream>
 #include <vector>

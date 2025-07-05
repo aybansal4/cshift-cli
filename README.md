@@ -73,4 +73,4 @@ help
 - To make CShift your main shell, go to the terminal (preferably GNOME), select the three lines and hit preferences, if you don't already have a profile, make one and select it, go to command the click run custom command instead of my shell, and put "./cshift-executable" in the box unless you renamed or moved cshift-executable in which case you put the execute command with the path to the CShift executable in the box. Save the setting and done.  
 
 ### ***WARNING:***  
-    If you want to make cshift your main shell, please never, ever delete cshift-executable in the main directory, doing this will delete the whole of cshift permanently.
+If you want to make cshift your main shell, please never, ever delete cshift-executable in the main directory, doing this will delete the whole of cshift permanently.

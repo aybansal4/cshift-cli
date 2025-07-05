@@ -8,7 +8,7 @@
  * - Compile C, C++, and Java files.
  * - Move or rename files and directories.
  * - Install packages (either common or specific ones).
- * - Execute raw bash commands.
+ * - Execute raw bash/zsh commands.
  * - Change the working directory, including support for "~" as home.
  * - List files in the current directory, with optional detailed view.
  * - Display help for available commands.
@@ -76,6 +76,8 @@ packages all                   Install common packages (nodejs, JDK, build-essen
 packages <package>             Install a specific package
 
 bash <command...>              Execute a raw bash command
+
+zsh <command...>               Execute a raw zsh command
 
 chdir <path>                   Change working directory (supports ~ for home)
 
@@ -195,6 +197,19 @@ end                            Exit the shell):";
                 continue;
             }
             std::string cmd = "bash -c '";
+            for (size_t i = 1; i < parsed.size(); ++i) {
+                for (char c : parsed[i])
+                    cmd += (c == '\'') ? "'\\''" : std::string(1, c);
+                if (i != parsed.size() - 1) cmd += " ";
+            }
+            cmd += "'";
+            torun = std::system(cmd.c_str());
+        } else if (parsed[0] == "zsh") {
+            if (parsed.size() < 2) {
+                std::cout << "cshift error: insufficient arguments for zsh command\n";
+                continue;
+            }
+            std::string cmd = "zsh -c '";
             for (size_t i = 1; i < parsed.size(); ++i) {
                 for (char c : parsed[i])
                     cmd += (c == '\'') ? "'\\''" : std::string(1, c);

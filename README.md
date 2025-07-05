@@ -1,4 +1,4 @@
-# cshift-cli
+ cshift.cpp# cshift-cli
 ***My Custom CLI***  
 
 **Command listing**:  
@@ -46,6 +46,9 @@ packages <package>
 
 bash <command...>
 :   Execute a raw bash command
+
+zsh <command...>
+:   Execute a raw zsh command
 
 chdir <path>
 :   Change working directory (supports `~` for home)

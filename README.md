@@ -68,9 +68,9 @@ help
 
 
 ### **Notes**:  
-- CShift only supports linux distros because of dependencies on linux-only headers such as *<unistd.h>*  
+- CShift only supports debian-based linux distros because of dependencies on linux-only headers such as *<unistd.h>* and installations made using the apt package manager (if you somehow installed it on an arch-linux based system, good for you, you can use CShift).  
 - To install CShift, you can download cshift.tar.gz and move the unzippped folder to the home directory (~) and to run it you can run "./cshift/cshift-executable" after having changes execute permissions  
-- To make CShift your main shell, go to the terminal and execute setup.sh
+- To make CShift your main shell, go to the terminal and execute setup.sh. Then, whenever you open any terminal, if you used the same shell as the time you ran setup.sh, it will run cshift. If you use many shells, you run setup.sh in all of those shells (supports csh, tcsh, bash, zsh, sh, and fish) to make it no matter what shell you launch the terminal in, it will always launch cshift (you don't have to do this.)
 
 ### ***WARNING:***  
 If you want to make cshift your main shell, please never, ever delete cshift-executable in the main directory, doing this will delete the whole of cshift permanently.

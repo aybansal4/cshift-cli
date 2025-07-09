@@ -4,7 +4,7 @@
  * This program implements a simple custom command-line shell with the following functionalities:
  * - Create/delete files and directories using "make" and "delete" commands.
  * - Edit files using "nano" or "vi".
- * - Execute scripts or binaries (js, class, or executable files).
+ * - Execute scripts or binaries
  * - Compile C, C++, and Java files.
  * - Move or rename files and directories.
  * - Install packages (either common or specific ones).
@@ -67,12 +67,12 @@ execute <filename>             Run a file:
 
 c++ <filename>                 Compile a C++ file with g++
 c <filename>                   Compile a C file with gcc
-java <filename>                Compile a Java file with javac
+java <filename>                Compile a Java file with javac (note that the java command doesn't run a .class file)
 js <filename>                   Run a JavaScript file with node
 
 move <source> <destination>    Move or rename a file/directory
 
-packages all                   Install common packages (nodejs, JDK, build-essential)
+packages all                   Install required packages (nodejs, JDK, build-essential)
 packages <package>             Install a specific package
 
 bash <command...>              Execute a raw bash command

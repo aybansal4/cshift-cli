@@ -69,5 +69,4 @@ help
 
 ### **Notes**:  
 - CShift only supports debian-based linux distros because of dependencies on linux-only headers such as *<unistd.h>* and installations made using the apt package manager (if you somehow installed it on an arch-linux based system, good for you, you can use CShift).  
-- To install CShift, you can download cshift.tar.gz and move the unzippped folder to the home directory (~) and to run it you can run "./cshift/cshift-executable" after having changes execute permissions  
-- To make CShift your main shell, go to the terminal and edit your config file for the shell you want to run CShift the moment that shell is open. In there, put the line at the bottom ./~/cshift/cshift-executable
+- To install CShift, you can download cshift.tar.gz and move the unzippped folder to the home directory, then you can run setup.sh which will set up cshift as a shell on your local device

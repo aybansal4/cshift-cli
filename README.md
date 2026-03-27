@@ -1,5 +1,6 @@
 # *CShift*
-## **My Custom CLI**  
+## **My Custom CLI**
+Wrapper for bash depending on gnome utils for gio --trash
 
 ### **Command listing**:  
 make file <filename>

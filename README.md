@@ -69,3 +69,6 @@ help
 
 
 ### **Note**: CShift only supports debian-based linux distros because of dependencies on linux-only headers such as *<unistd.h>* and installations made using the apt package manager (if you somehow installed it on an arch-linux based system, good for you, you can use CShift).  
+
+
+This project is no longer maintained, I am attempting to build a real shell instead of using a wrapper.
